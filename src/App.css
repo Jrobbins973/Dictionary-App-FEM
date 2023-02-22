@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  
+  /* background-color: black;
+  color: white; */
 }
 
 
@@ -110,6 +111,18 @@
   color: gray;
 }
 
+.search-results__meaning-box {
+  display: inline;
+}
+
+.synonym {
+  font-family: serif;
+  justify-content: left;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 380px;
+}
+
 .search-results__definitions {
   font-family: serif;
   justify-content: left;
@@ -122,4 +135,53 @@
 
 .search-results__definitions::marker {
   color: red;
+}
+
+
+.bottom-line {
+  font-family: serif;
+  justify-content: left;
+  text-align: left;
+  margin-left: 380px;
+  font-size: 20px;
+}
+
+
+.sound-button {
+  color: #A445ED;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+/* Style the label to look like a button */
+label[for="toggle"] {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Create the sliding effect */
+label[for="toggle"]::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Slide the toggle when the checkbox is checked */
+#toggle:checked + label::before {
+  transform: translateX(30px);
 }

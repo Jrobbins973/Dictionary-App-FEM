@@ -10,6 +10,8 @@ import SearchBar from './components/SearchBar';
 function App() {
   return (
     <div className="App">
+      <input id="toggle" type="checkbox"/>
+    <label for="toggle">Toggle Button</label>
       <SearchBar />
       
     </div>
