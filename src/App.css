@@ -4,6 +4,13 @@
   color: white; */
 }
 
+.App-dark {
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  color: white;
+}
+
 
 .search-form {
   display: flex;

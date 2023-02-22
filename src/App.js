@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/SearchBar';
+import React, {useState} from 'react';
 
 
 
@@ -8,10 +9,14 @@ import SearchBar from './components/SearchBar';
 
 
 function App() {
+
+  const [toggleDark, setToggleDark] = useState(false)
+
+
   return (
     <div className="App">
-      <input id="toggle" type="checkbox"/>
-    <label for="toggle">Toggle Button</label>
+      {/* <input onChange={() => setToggleDark(!toggleDark)} id="toggle" type="checkbox"/>
+      <label for="toggle"></label> */}
       <SearchBar />
       
     </div>
